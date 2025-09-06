@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+   @font-face {
+    font-family: 'NeutraText-book';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 200;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraText-book';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraText-book';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+   }
+
+   @font-face {
+    font-family: 'NeutraText-book';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: italic;
+    font-weight: 200;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraText-book';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraText-book';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: normal;
+   }
+
+   @font-face {
+    font-family: 'NeutraText-demi';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 200;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraText-demi';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraText-demi';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+   }
+
+   @font-face {
+    font-family: 'NeutraText-demi';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: italic;
+    font-weight: 200;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraText-demi';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraText-demi';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: normal;
+   }
+
+   @font-face {
+    font-family: 'NeutraDisplay-bold';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 200;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraDisplay-bold';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraDisplay-bold';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+   }
+
+   @font-face {
+    font-family: 'NeutraDisplay-bold';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: italic;
+    font-weight: 200;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraDisplay-bold';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: normal;
+   }
+   @font-face {
+    font-family: 'NeutraDisplay-bold';
+    src:
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.woff') format('woff'),
+     url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.ttf') format('truetype');
+    font-display: auto;
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: normal;
+   }
+  </style>
+  <title>Directory Offers</title>
+ </head>
+
+ <body>
+  <!--START HEADER BAR SECTION-->
+  <header class="header">
+   <div class="wrapper">
+    <div class="header__bar">
+     <a href="#">
+      <img class="img__logo" src="images/HAL_main_logo2x.png" alt="" />
+     </a>
+    </div>
+   </div>
+  </header>
+  <!--END HEADER BAR SECTION-->
+
+  <!--START 2 COLUMN LIVE TEXT / HERO IMAGE SECTION-->
+  <div class="flex__hero">
+   <div class="img__hero--container hero__half flex__hero--column">
+    <div>
+     <!-- Start: Players Club Images-->
+     <img class="img__players-club-m" src="images/HAL_Playersclublogo_desktop.png" alt="Holland America Line Players Club" />
+     <img class="img__players-club-t" src="images/HAL_Playersclublogo_desktop.png" alt="Holland America Line Players Club" />
+     <img class="img__players-club-d" src="images/HAL_Playersclublogo_desktop.png" alt="Holland America Line Players Club" />
+     <!-- End: Players Club Images-->
+
+     <!-- Casino Offer-->
+     <p class="content__hero content__hero--VIP">
+      Exclusive VIP
+      <br />
+      Casino Offer
+     </p>
+     <p class="content__hero content__hero--sailings">
+      Special Savings on
+      <span class="block">Select Sailings</span>
+     </p>
+    </div>
+   </div>
+
+   <div class="hero__half">
+    <!-- Casino hero-->
+    <img src="images/DirectoryofOffers_Hero_scale2x-optimized.png" alt="Holland America Line Players Club Casino" />
+   </div>
+  </div>
+  <!--END 2 COLUMN LIVE TEXT / HERO IMAGE SECTION-->
+
+  <!-- START MAIN CONTENT SECTION -->
+  <main class="no__padding">
+   <div class="wrapper">
+    <!-- Start of Location1-->
+    <div class="directory directory__grid--wrapper">
+     <div class="directory__container">
+      <div class="image__container">
+       <!-- Location1 Image-->
+       <img src="images/Location_Header_scale2x-optimized.png" alt="Holland America Line Players Club" />
+      </div>
+
+      <div class="shift__up--directory">
+       <div class="card card__directory flex flex__between flex__valign">
+        <div class="card-title__container">
+         <!-- Location1 title-->
+         <h1 class="title__primary--directory">[Location]</h1>
+        </div>
+        <div class="card-content__container">
+         <!-- Location1 consultant-->
+         <p class="content__directory">Call [Your Personal Consultant]</p>
+         <!-- Location1 call now cta-->
+         <button type="button" class="cta cta__call-now">Call now [(XXX)XXX-XXXX]</button>
+        </div>
+       </div>
+       <div class="schedule schedule__container">
+        <!-- START: Itinerary1 table header-->
+        <div class="flex__row flex__around">
+         <div class="schedule__table-header flex__grow">Itinerary</div>
+         <div class="schedule__table-header flex__grow">Ship</div>
+         <div class="schedule__table-header flex__grow">Date</div>
+         <div class="schedule__table-header flex__grow">
+          Embark /
+          <span class="block">Disembark</span>
+         </div>
+         <div class="schedule__table-header flex__grow">Fare</div>
+        </div>
+        <!-- Itinerary1 table content-->
+        <div class="flex__row flex__around color__alt">
+         <div class="schedule__table-data flex__grow">[Itinerary1]</div>
+         <div class="schedule__table-data flex__grow">[Shipname]</div>
+         <div class="schedule__table-data flex__grow">[00/00/00]</div>
+         <div class="schedule__table-data flex__grow">[Embark / Disembark]</div>
+         <div class="schedule__table-data flex__grow">[$000]</div>
+        </div>
+        <div class="flex__row flex__around color__alt">
+         <div class="schedule__table-data flex__grow">[Itinerary1]</div>
+         <div class="schedule__table-data flex__grow">[Shipname]</div>
+         <div class="schedule__table-data flex__grow">[00/00/00]</div>
+         <div class="schedule__table-data flex__grow">[Embark / Disembark]</div>
+         <div class="schedule__table-data flex__grow">[$000]</div>
+        </div>
+        <div class="flex__row flex__around color__alt">
+         <div class="schedule__table-data flex__grow">[Itinerary1]</div>
+         <div class="schedule__table-data flex__grow">[Shipname]</div>
+         <div class="schedule__table-data flex__grow">[00/00/00]</div>
+         <div class="schedule__table-data flex__grow">[Embark / Disembark]</div>
+         <div class="schedule__table-data flex__grow">[$000]</div>
+        </div>
+        <!--START: Interactive accordion clicker here-->
+
+        <details>
+         <summary class="title__accordian" onclick="toggleText(event)"></summary>
+         <div class="container">
+          <!-- Accordion Itinerary2 row -->
+          <div class="flex__row flex__around color__alt">
+           <div class="schedule__table-data flex__grow">[Itinerary2]</div>
+           <div class="schedule__table-data flex__grow">[Shipname]</div>
+           <div class="schedule__table-data flex__grow">[00/00/00]</div>
+           <div class="schedule__table-data flex__grow">[Embark / Disembark]</div>
+           <div class="schedule__table-data flex__grow">[$000]</div>
+          </div>
+          <!-- Accordion Itinerary3 row -->
+          <div class="flex__row flex__around color__alt">
+           <div class="schedule__table-data flex__grow">[Itinerary3]</div>
+           <div class="schedule__table-data flex__grow">[Shipname]</div>
+           <div class="schedule__table-data flex__grow">[00/00/00]</div>
+           <div class="schedule__table-data flex__grow">[Embark / Disembark]</div>
+           <div class="schedule__table-data flex__grow">[$000]</div>
+          </div>
+
+          <!--Insert as many Itineray row items as needed-->
+
+          <div class="flex__row flex__around color__alt">
+           <div class="schedule__table-data flex__grow">[Itinerary3]</div>
+           <div class="schedule__table-data flex__grow">[Shipname]</div>
+           <div class="schedule__table-data flex__grow">[00/00/00]</div>
+           <div class="schedule__table-data flex__grow">[Embark / Disembark]</div>
+           <div class="schedule__table-data flex__grow">[$000]</div>
+          </div>
+
+          <div class="flex__row flex__around color__alt">
+           <div class="schedule__table-data flex__grow">[Itinerary3]</div>
+           <div class="schedule__table-data flex__grow">[Shipname]</div>
+           <div class="schedule__table-data flex__grow">[00/00/00]</div>
+           <div class="schedule__table-data flex__grow">[Embark / Disembark]</div>
+           <div class="schedule__table-data flex__grow">[$000]</div>
+          </div>
+
+          <div class="flex__row flex__around color__alt">
+           <div class="schedule__table-data flex__grow">[Itinerary3]</div>
+           <div class="schedule__table-data flex__grow">[Shipname]</div>
+           <div class="schedule__table-data flex__grow">[00/00/00]</div>
+           <div class="schedule__table-data flex__grow">[Embark / Disembark]</div>
+           <div class="schedule__table-data flex__grow">[$000]</div>
+          </div>
+
+          <!----------------------------------------->
+         </div>
+        </details>
+        <hr class="title__accordian--underline" />
+        <!--END: Interactive Accordion clicker here-->
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--End of Location1-->
+   </div>
+  </main>
+  <!-- END MAIN CONTENT SECTION -->
+
+  <!--START FOOTER SECTION-->
+  <footer class="footer">
+   <div class="wrapper footer__main--container flex flex__between flex__valign">
+    <div class="flex flex__valign">
+     <div class="footer__logo--container">
+      <!--footer logo image-->
+      <a href="#">
+       <img class="img__logo" src="images/HAL_main_logo2x.png" alt="" />
+      </a>
+     </div>
+
+     <div class="footer__icons--container">
+      <!--social media image icons here-->
+      <a href="https://www.facebook.com/HollandAmericaLine/">
+       <img class="img__icons" width="14" height="30" src="images/facebook.png" alt="Facebook" style="width: 14px; height: 30px" />
+      </a>
+      <a href="https://www.instagram.com/hollandamericaline">
+       <img class="img__icons" width="30" height="30" src="images/insta.png" alt="Instagram" style="width: 30px; height: 30px" />
+      </a>
+      <a href="https://www.youtube.com/hollandamericaline">
+       <img class="img__icons" width="30" height="21" src="images/youtube.png" alt="Youtube" style="width: 30px; height: 21px" />
+      </a>
+      <a href="https://twitter.com/HALcruises">
+       <img class="img__icons" width="30" height="24" src="images/Twitter.png" alt="Twitter" style="width: 30px; height: 24px" />
+      </a>
+      <a href="https://www.pinterest.com/halcruises/">
+       <img class="img__icons" width="30" height="30" src="images/Pinterest.png" alt="Pinterest" style="width: 30px; height: 30px" />
+      </a>
+     </div>
+    </div>
+    <!--editable content here-->
+    <p>
+     <a href="https://www.hollandamerica.com/en_US/legal-privacy/website-terms-and-conditions.html" class="content__terms">View Terms & Conditions</a>
+    </p>
+   </div>
+  </footer>
+  <!--END FOOTER SECTION-->
+
+  <script src="app.js"></script>
+ </body>
+</html>

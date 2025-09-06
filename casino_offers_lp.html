@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="style.css" />
+ <title>Casino Offers</title>
+ <style>
+  @font-face {
+   font-family: 'NeutraText-book';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: normal;
+   font-weight: 200;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-book';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: normal;
+   font-weight: 400;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-book';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: normal;
+   font-weight: 700;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-book';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: italic;
+   font-weight: 200;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-book';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: italic;
+   font-weight: 400;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-book';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_book_italic-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: italic;
+   font-weight: 700;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-demi';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: normal;
+   font-weight: 200;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-demi';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: normal;
+   font-weight: 400;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-demi';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_demi_Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: normal;
+   font-weight: 700;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-demi';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: italic;
+   font-weight: 200;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-demi';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: italic;
+   font-weight: 400;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraText-demi';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_Demi_Italic-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: italic;
+   font-weight: 700;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraDisplay-bold';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: normal;
+   font-weight: 200;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraDisplay-bold';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: normal;
+   font-weight: 400;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraDisplay-bold';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: normal;
+   font-weight: 700;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraDisplay-bold';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: italic;
+   font-weight: 200;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraDisplay-bold';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: italic;
+   font-weight: 400;
+   font-stretch: normal;
+  }
+
+  @font-face {
+   font-family: 'NeutraDisplay-bold';
+   src:
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.woff') format('woff'),
+    url('https://media.hollandamerica.com/itk/template/includes/fonts/Neutra2Text_bold_italic-Lining.ttf') format('truetype');
+   font-display: auto;
+   font-style: italic;
+   font-weight: 700;
+   font-stretch: normal;
+  }
+ </style>
+</head>
+
+<body>
+ <!--START HEADER BAR SECTION-->
+ <header class="header">
+  <div class="wrapper">
+   <div class="header__bar">
+    <!--header logo image-->
+    <a href="#">
+      <img class="img__logo" src="images/HAL_main_logo2x.png" alt="Holland America Line" />
+     </a>
+   </div>
+  </div>
+ </header>
+ <!--END HEADER BAR SECTION-->
+
+ <!--START BANNER IMAGE SECTION-->
+ <div class="img__relative">
+  <!-- Swap out small, medium & large images here (Main Casino Hero Img) -->
+  <img class="img__show" src="images/Casino_Hero_mobile2x.png" alt="" />
+  <img class="img__hide" src="images/casino_hero2x_optimized.png" alt="" />
+
+  <div class="img__25koffer">
+   <!-- Swap out small, medium & large images here (25K Img) -->
+
+   <img class="img__25koffer img__25koffer-m" src="images/HAL-WinYourShareOf25000_Mobile.png" alt="Win your share of $25,000 on Holland America Line Players Club the ultimate game cruise." />
+   <img class="img__25koffer img__25koffer-t" src="images/HAL_WinYourShareOf25000_Tablet.png" alt="Win your share of $25,000 on Holland America Line Players Club the ultimate game cruise." />
+   <img class="img__25koffer img__25koffer-d" src="images/HAL_WinYourShareOf25000_Desktop.png" alt="Win your share of $25,000 on Holland America Line Players Club the ultimate game cruise." />
+  </div>
+ </div>
+ <!--END BANNER IMAGE SECTION-->
+
+ <!--START MAIN CONTENT SECTION-->
+ <main>
+  <div class="wrapper shift__up">
+   <!-- START FEATURE CONTENT MODULE SECTION -->
+   <section class="feature feature__grid--wrapper">
+    <div class="feature__container">
+     <!--editable content here-->
+     <p class="cta cta__exclusive">Exclusive For You</p>
+     <!--editable content here-->
+     <h1 class="title__primary">Ultimate: Game Edition Cruise</h1>
+     <!--editable content here-->
+     <p class="content__copy">From Seattle to Yokohama, cross the international dateline and uncover fantastical wonders, from majestic humpback whales to endangered Japanese cranes.</p>
+    </div>
+
+    <div class="cta__container--cn">
+     <!--editable content here-->
+     <p class="content__pc">Call Your Personal Consultant</p>
+     <!--editable content here-->
+     <button type="button" class="cta cta__call-now">Call now (555)555-5555</button>
+    </div>
+   </section>
+   <!-- END FEATURE CONTENT MODULE SECTION -->
+
+   <!-- START YOUR ITINERARY MODULE SECTION -->
+   <section class="itinerary__grid--wrapper">
+    <div class="card card__itinerary">
+     <!--editable content here-->
+     <h2 class="title__secondary">Your Itinerary</h2>
+     <hr class="card__divider" />
+     <p class="content__itinerary">13-Day North Pacific Crossing</p>
+     <p class="content__itinerary">Westerdam</p>
+     <p class="content__itinerary">Oct 1 - Oct 15, 2023</p>
+     <p class="content__itinerary">Departs : Seattle, Washington, US</p>
+     <p class="content__itinerary">Arrives : Yokohama (Tokyo), Japan</p>
+     <!-- Swap out scalable (card image)-->
+     <img class="img" src="images/Westerdam_Mobile_GlacierBay1x.png" alt="Holland America Line, Westerdam, an award winning cruise ship that features superb bars, entertainment and dining venues." />
+    </div>
+
+    <div class="schedule schedule__container--casino">
+     <table class="schedule__table" border="0" cell-spacing="0" cell-padding="0" width="100%">
+      <thead>
+       <!--editable header schedule content here-->
+       <tr>
+        <th class="schedule__table-header">Date</th>
+        <th class="schedule__table-header">Location</th>
+       </tr>
+      </thead>
+      <tbody>
+       <!--editable itinerary body schedule content here-->
+       <tr>
+        <td class="schedule__table-data">Oct 1, 2023</td>
+        <td class="schedule__table-data">Seattle, Washington, US</td>
+       </tr>
+       <tr>
+        <td class="schedule__table-data">Oct 2, 2023</td>
+        <td class="schedule__table-data">Days At Sea</td>
+       </tr>
+       <tr>
+        <td class="schedule__table-data">Oct 3, 2023</td>
+        <td class="schedule__table-data">Juneau, Alaska, US</td>
+       </tr>
+       <tr>
+        <td class="schedule__table-data">Oct. 4-7 2023</td>
+        <td class="schedule__table-data">Days At Sea</td>
+       </tr>
+       <tr>
+        <td class="schedule__table-data">Oct. 8, 2023</td>
+        <td class="schedule__table-data">Cross International Dateline CRUISING ONLY</td>
+       </tr>
+       <tr>
+        <td class="schedule__table-data">Oct. 10-11, 2023</td>
+        <td class="schedule__table-data">Days At Sea</td>
+       </tr>
+       <tr>
+        <td class="schedule__table-data">Oct. 12, 2023</td>
+        <td class="schedule__table-data">Kushiro, Japan</td>
+       </tr>
+       <tr>
+        <td class="schedule__table-data">Oct. 13-14, 2023</td>
+        <td class="schedule__table-data">Days At Sea</td>
+       </tr>
+       <tr>
+        <td class="schedule__table-data">Oct. 15, 2023</td>
+        <td class="schedule__table-data">Yokohama (Tokyo), Japan</td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+   <!-- END YOUR ITINERARY MODULE SECTION -->
+  </div>
+ </main>
+ <!--END MAIN CONTENT SECTION-->
+
+ <!--START FOOTER SECTION-->
+ <footer class="footer">
+  <div class="wrapper footer__main--container flex flex__between flex__valign">
+   <div class="flex flex__valign">
+    <div class="footer__logo--container">
+     <!--footer logo image-->
+     <a href="#">
+       <img class="img__logo" src="images/HAL_main_logo2x.png" alt="Holland America Line" />
+      </a>
+    </div>
+
+    <div class="footer__icons--container">
+     <!--social media image icons here-->
+     <a href="https://www.facebook.com/HollandAmericaLine/">
+       <img class="img__icons" width="14" height="30" src="images/facebook.png" alt="Facebook" style="width: 14px; height: 30px" />
+      </a>
+     <a href="https://www.instagram.com/hollandamericaline">
+       <img class="img__icons" width="30" height="30" src="images/insta.png" alt="Instagram" style="width: 30px; height: 30px" />
+      </a>
+     <a href="https://www.youtube.com/hollandamericaline">
+       <img class="img__icons" width="30" height="21" src="images/youtube.png" alt="Youtube" style="width: 30px; height: 21px" />
+      </a>
+     <a href="https://twitter.com/HALcruises">
+       <img class="img__icons" width="30" height="24" src="images/Twitter.png" alt="Twitter" style="width: 30px; height: 24px" />
+      </a>
+     <a href="https://www.pinterest.com/halcruises/">
+       <img class="img__icons" width="30" height="30" src="images/Pinterest.png" alt="Pinterest" style="width: 30px; height: 30px" />
+      </a>
+    </div>
+   </div>
+   <!--editable content here-->
+   <p>
+     <a href="https://www.hollandamerica.com/en_US/legal-privacy/website-terms-and-conditions.html" class="content__terms">View Terms &amp; Conditions</a>
+    </p>
+  </div>
+ </footer>
+ <!--END FOOTER SECTION-->
+</body>
+</html>
